@@ -138,7 +138,7 @@ function ComponentX(): JSX.Element {
   const checkUser = async () => {
     if (publicKey) {
       let dataPayload = await fetch(
-        "http://54.251.24.122:3001/paylater/checkuser",
+        "http://54.255.216.111:3001/paylater/checkuser",
         {
           method: "POST",
           headers: new Headers({ "content-type": "application/json" }),
@@ -171,7 +171,7 @@ function ComponentX(): JSX.Element {
       console.log({ messageSigned });
 
       let dataPayload = await fetch(
-        "http://54.251.24.122:3001/paylater/register",
+        "http://54.255.216.111:3001/paylater/register",
         {
           method: "POST",
           headers: new Headers({ "content-type": "application/json" }),
