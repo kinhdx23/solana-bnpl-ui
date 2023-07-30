@@ -122,7 +122,7 @@ export function AppToolbar(props: AppToolbarProps): JSX.Element {
             onClick={openUserMenu}
           />
         )}
-        {me === null && (
+        {/* {me === null && (
           <Button
             component={NavLink}
             variant="text"
@@ -139,7 +139,7 @@ export function AppToolbar(props: AppToolbarProps): JSX.Element {
             color="inherit"
             children="Create an account"
           />
-        )}
+        )} */}
       </Toolbar>
 
       {/* Pop-up menus */}

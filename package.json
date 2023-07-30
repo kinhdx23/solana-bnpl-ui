@@ -21,6 +21,7 @@
   "devDependencies": {
     "@emotion/babel-plugin": "^11.11.0",
     "@emotion/eslint-plugin": "^11.11.0",
+    "@solana/web3.js": "^1.78.1",
     "@types/eslint": "^8.44.0",
     "@typescript-eslint/eslint-plugin": "^6.1.0",
     "@typescript-eslint/parser": "^6.1.0",
@@ -53,5 +54,14 @@
     "bracketSameLine": false,
     "arrowParens": "always",
     "endOfLine": "lf"
+  },
+  "dependencies": {
+    "@candypay/checkout-sdk": "^0.1.57",
+    "@solana/wallet-adapter-material-ui": "^0.16.31",
+    "@solana/wallet-adapter-react": "^0.15.33",
+    "@solana/wallet-adapter-wallets": "^0.19.19",
+    "@solana/web3.js": "^1.78.1",
+    "@web3auth/sign-in-with-solana": "^2.0.0",
+    "react-query": "^3.39.3"
   }
 }

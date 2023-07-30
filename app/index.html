@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>React App</title>
+    <title>Buy now pay later</title>
     <meta
       name="description"
       content="The web's most popular Jamstack React template"
@@ -28,6 +28,11 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script>
+      if (global === undefined) {
+        var global = window;
+      }
+    </script>
     <script type="module" src="/index.tsx"></script>
   </body>
 </html>

@@ -18,7 +18,7 @@ import {
   useHandleSubmit,
   useState,
   useSwitchSAML,
-} from "./Login.hooks.js";
+} from "./Admin.hooks.js";
 import { Notice } from "./Notice.js";
 
 /**
