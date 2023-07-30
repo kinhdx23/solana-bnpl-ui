@@ -1,0 +1,57 @@
+{
+  "name": "root",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "yarn@4.0.0-rc.48",
+  "type": "module",
+  "workspaces": [
+    "app",
+    "edge",
+    "scripts"
+  ],
+  "scripts": {
+    "postinstallcc": "node ./scripts/postinstall.js",
+    "update-schema": "node ./scripts/update-schema.js",
+    "start": "yarn workspace app start",
+    "lint": "eslint --cache --report-unused-disable-directives .",
+    "test": "vitest",
+    "build": "yarn workspaces foreach -ti run build",
+    "deploy": "yarn workspace edge deploy"
+  },
+  "devDependencies": {
+    "@emotion/babel-plugin": "^11.11.0",
+    "@emotion/eslint-plugin": "^11.11.0",
+    "@types/eslint": "^8.44.0",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "graphql": "^16.7.1",
+    "happy-dom": "^10.5.2",
+    "prettier": "^3.0.0",
+    "react": "^18.2.0",
+    "relay-config": "^12.0.1",
+    "typescript": "~5.1.6",
+    "vite": "^4.4.4",
+    "vitest": "^0.33.0"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": false,
+    "quoteProps": "as-needed",
+    "jsxSingleQuote": false,
+    "trailingComma": "all",
+    "bracketSpacing": true,
+    "bracketSameLine": false,
+    "arrowParens": "always",
+    "endOfLine": "lf"
+  }
+}
